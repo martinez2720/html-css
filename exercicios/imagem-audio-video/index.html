@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens, Áudio e Vídeos</title>
+</head>
+<body>
+   <h1>Imagens que mudam de tamanho conforme a tela</h1> 
+
+   <picture>
+    <source media="(max-width: 700px )" srcset="imagens/ImagemP.png" type="image/png">
+    <source media="(max-width: 1000px )" srcset="imagens/ImagemM.png" type="image/png">
+    <img src="imagens/ImagemG.png" alt="imagem flexivel">
+   </picture>
+
+   <h1>Reproduzindo Áudio Hospedados no Site</h1>
+   <audio src="teste-audio.mp3"  controls  autoplay></audio>
+
+   <h1>Inserindo Vídeos Hospedados no Site</h1>
+
+   <video width="500" controls>
+
+   <source src="video/barco.mp4" type="video/mp4">
+
+   </video>
+
+   <img src="video/iserir-videos.png" alt="videos-para-varios-dispositivos">
+
+   <h1>Inserindo vídeos de uma Hospedagem</h1>
+
+   <h3> escolher videos da preferencia e clicar em Incorporar</h3>
+   
+   <img src="video/explicacao-video-1.png" alt="explicacao1">
+
+
+   <h3>depois é só copiar e colar no programa</h3>
+
+   <img src="video/explicacao-video-2.png" alt="explicacao2">
+
+ 
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/f7fJvQ2LR8M?si=pR8HCDYkpISrfahh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+</body>
+</html>
