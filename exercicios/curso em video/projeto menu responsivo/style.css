@@ -11,16 +11,19 @@ header{
     padding-top: 10px;
  
 }
+
 h1{
     text-align: center;
     color: aliceblue;
 }
+
 menu{
     display: none;
 }
 
 menu > ul {
     list-style-type: none;
+    display: block;
 }
 
 menu a{
@@ -63,7 +66,7 @@ main{
     margin: auto;
     margin-top: 10px;
     padding: 15px;
-    max-width: 1000px;
+    max-width: 768px;
 }
 
 p{
