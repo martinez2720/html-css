@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media screen and (max-width: 767px ) {
+
+    i#burguer{
+        display: block;
+    }
+    
+}
+
+
+:root{
+    --fonte-padrao: Roboto, sans-serif;
+    --cor1: #0ca4a5;
+    --cor2: #fffcf9;
+    --cor3: #4a525a;
+    --cor4: #24272b;
+    --cor5: #B1EDE8;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+header{
+
+color: var(--cor4);
+padding: 20px;
+
+}
+
+h1{
+    text-align: center;
+
+}
+
+main{
+
+    width: 90vw;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+    max-width: 768px;
+    font-family: var(--fonte-padrao);
+    box-shadow: 2px 2px 4px rgba(10, 10, 10, 0.486);
+}
+
+/*estilização do menu*/
+
+#itens{
+    list-style-type: none;
+    display: block;
+}
+
+menu{
+    margin: 0px -30px 10px -30px;
+    flex-flow: row nowrap;
+    background-color: var(--cor4);
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+li{
+  background-color: var(--cor1); 
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin-left: 5px;
+  
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor4);
+    padding: 10px;
+    
+
+}
+
+
+menu a:hover{
+
+    background-color: var(--cor5);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+/* estilização do hamburguer-> menu*/
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+#burguer{
+    color: var(--cor1);
+    text-align: left;
+    cursor: pointer;
+    background-size: bottom left;
+    display: none;
+  
+}
+
+#burguer:hover{
+background-color: var(--cor2);
+width: 30px;
+
+}
+
+menu > ul > li{
+    display: inline-block;
+  }
+
+
+
+
