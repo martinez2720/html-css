@@ -2,26 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@media screen and (max-width: 500px ) {
-
-    i#burguer{
-        display: block;
-    }
-    #itens{
-        flex-flow: column wrap;
-    }
-    
-}
-
-@media screen and (max-width: 500px) {
-
-    menu{
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
-
 
 :root{
     --fonte-padrao: Roboto, sans-serif;
@@ -45,21 +25,14 @@ body{
 }
 
 header{
-    background-color: var(--cor4);
+
     padding: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-
+   
     
 }
 
 h1{
-    text-align: left;
-    color: #fffcf9;
-    /*flex: grown -> shrink -> basis*/
-    flex: 0 0 200px;
+    text-align: center;
 
 }
 
@@ -79,24 +52,24 @@ main{
 
 #itens{
     list-style-type: none;
-    display:flex;
-    
+    display: none;
 }
 
 menu{
     margin: 0px -30px 10px -30px;
     flex-flow: row wrap;
+    background-color: var(--cor4);
     padding: 10px;
     justify-content: flex-end;
-    display: flex;
+    
 }
 
 li{
+
   background-color: var(--cor1); 
   padding: 10px 0px;
   border-radius: 5px;
   margin-left: 5px;
- 
   
 }
 
@@ -104,7 +77,6 @@ a{
     text-decoration: none;
     color: var(--cor4);
     padding: 10px;
-
     
 
 }

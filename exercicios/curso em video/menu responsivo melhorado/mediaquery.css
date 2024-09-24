@@ -1,0 +1,41 @@
+@media screen and (max-width:500px)   {
+
+    menu > ul > li{
+        display: flex;
+        flex-direction: column;
+        width: 79px;
+        padding: 0px;
+        margin: 10px;
+      }
+
+    menu{
+        width: 90px;
+        background-color: white;
+    }
+
+    body{
+        display: flex;
+    }
+
+    main{
+        flex-basis: 200px;
+        margin-top: 70px;
+    }
+
+    #burguer{
+        margin-top: 20px;
+    }
+
+
+
+
+    
+}
+
+@media screen and (max-width: 767px) {
+
+    i#burguer{
+        display: block;
+    }
+    
+}

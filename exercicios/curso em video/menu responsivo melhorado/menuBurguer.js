@@ -1,5 +1,5 @@
 function burguer(){
-    if (window.innerWidth >= 500 ){
+    if (window.innerWidth >= 768 ){
          itens.style.display  = 'block'
     }
    
