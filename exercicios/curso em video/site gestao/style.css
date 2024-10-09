@@ -74,12 +74,15 @@ nav > img{
     
 }
 
+.logo{
+    flex-direction: column;
+    font-family: var(--fontePrincipal);
+    color: var(--corPrincipal);
+    padding-left: 10px;
+}
+
 nav > .logo{
-flex-direction: column;
-font-size: 28px;
-font-family: var(--fontePrincipal);
-color: var(--corPrincipal);
-padding-left: 10px;
+    font-size: 28px;
 }
 
 /*Apresentação*/
@@ -262,8 +265,8 @@ div#roxo{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-between;
-    border: 2px solid purple;
+    justify-content: space-evenly;
+   /* border: 2px solid purple;*/
     margin: auto;
 
 
@@ -294,11 +297,11 @@ div#roxo{
     width: 250px; 
     height: 96px;
     font-size: 16px;
-    border: 2px solid var(--corPrincipal);
+  /*  border: 2px solid var(--corPrincipal);*/
 }
 
 .conteudoPlanos{
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     width: 339px; 
     align-self: top;
 
@@ -323,13 +326,36 @@ div#roxo{
 
 /*Rodapé*/
 
-footer > .degrade{
-    height: 47px;
-   width: 100%;
-    
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo{
+    font-size: 25px;
+    line-height: 17px;
+    padding: 10px;
+}
+
+footer a{
+
+}
+
+.configuracaoFooter{
+    font-family: var(--fonteRegular);
+    font-size: 12px;
+    color: var(--corSegundaria);
 }
 
 #esquerda{
-    border: 2px solid black;
+    right: 0;
+    top:0;
+    width: 500px;
 }
+
+.degrade{
+    height: 47px;
+    width: 100%; 
+}
+
 
