@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --fontePrincipal: "Righteous", sans-serif;
+    --fonteTitulo:  "Afacad Flux", sans-serif;
+    --fonteRegular: "Poppins", sans-serif;
+    --corPrincipal: #FF2001;
+    --corSegundaria: #211545;
+    --corRosa: #DB1137;
+    --corRoxo: #791EEB;
+}
+
+/*Fontes*/
+
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.afacad-flux{
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    }
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+.degrade{
+    background-image: linear-gradient(to right,#CC1901, #DB1137,#EB096E, #9D17C4, #791EEB );
+    color: #CC1901;
+    
+}
+
+header > .degrade{
+    height: 21px ;
+    margin-bottom: 20px;
+
+    
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.displayBlock{
+    display: block;
+}
+
+/*Menu*/
+
+nav > img{
+    width: 71px ;
+    height: 71px;
+    margin-left: 50px;
+    
+}
+
+nav > .logo{
+flex-direction: column;
+font-size: 28px;
+font-family: var(--fontePrincipal);
+color: var(--corPrincipal);
+padding-left: 10px;
+}
+
+/*Apresentação*/
+
+h3.tela{
+    font-family: var(--fonteRegular);
+    font-weight:normal;
+    font-size: 16px;
+    color: rgba(33, 21, 69, 0.596);
+    margin-bottom: 50px;
+
+}
+
+main  h1{
+    font-family: var(--fonteTitulo);
+    color: var(--corSegundaria);
+    font-size: 85px;
+    
+}
+
+#h1{
+    margin-top: 200px;
+}
+
+.laranja{
+    color: var(--corPrincipal) ;
+}
+
+.margem{      
+    width: 90%;
+    margin: auto;
+}
+
+main p{
+    color: var(--corSegundaria);
+    font-family: var(--fonteRegular);
+    font-size: 21px;
+    width: 695px;
+    margin-top: 15px;
+    
+}
+
+input{
+    padding: 10px;
+    font-family: var(--fonteTitulo);
+    border: 5px solid var(--corPrincipal);
+    border-radius: 23px;
+    width: 199px;
+    font-size: 31px;
+    color: var(--corPrincipal);
+    background-color: white;
+    font-weight: bold ;
+    margin-top: 73px;
+    cursor: pointer;
+}
+
+/*imagem*/
+
+#circulo{
+    position: relative;
+    background-color: var(--corSegundaria);
+    color: white;
+    width: 584px;
+    height: 589px;
+    border-radius: 100%;
+    margin-left: 250px;
+}
+
+#barra1{
+
+}
+
+#barra2{
+    
+}
+
+#barra3{
+    
+}
+
+
+#h2Principal{
+    /*border: 2px solid purple;*/
+    font-family: var(--fonteTitulo);
+    color: var(--corSegundaria);
+    font-size: 43px;
+    width: 1077px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 90px;
+
+}
+
+main .icone1{
+    transform: translateY(100%);
+    width: 4%;
+}
+
+main .icone2{
+    transform: translate(100%, 100%);
+    width: 5%;
+}
+
+/*Gráficos*/
+
+.imagem{
+    width: 237px;
+    
+}
+
+.transY{
+    transform: translateY(100%);
+}
+
+
+/*Funcionalidades*/
+
+div#roxo{
+    display: block;
+    background-color: var(--corSegundaria);
+    padding: 50px;
+    margin-bottom: 150px;
+    
+}
+
+.evenly{
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: space-evenly;
+    
+}
+
+.funcion1{
+  /* border: 2px solid green;*/
+    color: white;
+    font-family: var(--fonteTitulo);
+    width: 300px;
+    height: 92px;
+    font-size: 51px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+#widthDiferente{
+    width: 350px;
+}
+
+#translateY{
+    transform: translateY(42%);
+}
+
+.evenly b{
+   /* border: 2px solid yellow;*/
+    display: flex;
+    width: 300px;
+    justify-content:center;
+    
+}
+
+.funcion2{
+  /*  border: 2px solid black;*/
+    color: white;
+    width: 292px;
+    font-size: 16px;
+    font-family: var(--fonteRegular);
+    font-weight: normal;
+}
+
+.conteudo{
+    max-width: 1000px;
+}
+
+
+/*Conteudo (planos)*/
+
+#planos{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    border: 2px solid purple;
+    margin: auto;
+
+
+}
+.caixa{
+    display: flex;
+    border: 6px solid var(--corPrincipal);
+    border-radius: 43px;
+    width: 339px;
+    height: 463px;
+}
+
+.tituloCaixa{
+    font-family: var(--fonteTitulo);
+    color: var(--corPrincipal);
+    font-size: 55px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+
+
+}
+
+.caixa p{
+    align-self: center;
+    margin: auto;
+    width: 250px; 
+    height: 96px;
+    font-size: 16px;
+    border: 2px solid var(--corPrincipal);
+}
+
+.conteudoPlanos{
+    border: 2px solid green;
+    width: 339px; 
+    align-self: top;
+
+
+}
+
+.precosPlanos{
+    display: flex;
+
+}
+
+.preco{
+    font-family: var(--fonteTitulo);
+    color: var(--corPrincipal);
+    font-size: 75px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+
+}
+
+/*Rodapé*/
+
+footer > .degrade{
+    height: 47px;
+   width: 100%;
+    
+}
+
+#esquerda{
+    border: 2px solid black;
+}
+
