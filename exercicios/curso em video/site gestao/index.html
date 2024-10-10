@@ -6,12 +6,12 @@
     <title>Gestão Fácil</title>
     <script>src="screen.js"</script>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="mediaquery.css">
+</head> 
 <body>
     <header>
 
         <div class="degrade">.</div>
- 
 
        <nav class="displayFlex">
                 <img src="imagens/logo.png" alt="logo">
@@ -19,6 +19,27 @@
                     <p >Gestão</p>
                     <p >Fácil</p>
                 </div>
+                <ul>
+                    <li><a href="#">Quem Somos</a>
+                       <!-- <p>A Gestão Fácil é uma solução
+                            completa para gerenciar seus funcionários de
+                            maneira eficiente e prática. Nossa plataforma
+                            oferece ferramentas intuitivas e poderosas para
+                            otimizar a administração de recursos humanos
+                            em sua empresa.</p> -->
+                    </li>
+                    <li><a href="#">Funcionalidades do Sistema</a>
+                        <ul>
+                            <li><a href="#">Visualizar Funcionários</a></li>
+                            <li><a href="#">Cadastrar Novos Funcionários</a></li>
+                            <li><a href="#">Ver Perfil Detalhado</a></li>
+                            <li><a href="#">Emitir Relatório</a></li>
+                            <li><a href="#">Versão Mobile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nossos Planos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
         
             
         </nav>
@@ -41,11 +62,14 @@
                 </div>
                </div>
                <div id="imagem">
-                   <div id="circulo">.</div>
-                   <div id="barra1">.</div>
-                   <div id="barra2">.</div>
-                   <div id="barra3">.</div>
-                   <img src="imagens/pexels-anna-nekrashevich-7552568.png" alt="imagem">
+                   <div id="circulo">.<div id="barras">
+                    <div id="barra3">.</div>
+                    <div id="barra2">.</div>
+                    <div id="barra1">.</div>
+                </div></div>
+                   
+                <img src="imagens/pexels-anna-nekrashevich-7552568.png" alt="imagem">
+                
                </div>
             </div>
                
@@ -55,51 +79,58 @@
                  
                  <h2 id="h2Principal">Otimize a administração de recursos humanos em sua <br> <img src="imagens/elevacao.png" alt="flecha" class="icone1"> empresa com nossas <b class="laranja">ferramentas poderosas.</b> <img src="imagens/grafico-de-pizza.png" alt="pizza" class="icone2"></h2> 
                 
-                <div class="evenly">
-                    <img src="imagens/grafico1.png" alt="imagem grafico 1"  class="imagem" >
-                    <img src="imagens/grafico2.png" alt="imagem grafico 2" class="imagem">
-                    <img src="imagens/grafico3.png" alt="imagem grafico 3" class="imagem" >
-                    <img src="imagens/grafico4.png" alt="imagem grafico 4" class="imagem">
+                <div>
+                    <img src="imagens/grafico1.png" alt="imagem grafico 1" id="ziguezague" class="grafico" >
+                    <img src="imagens/grafico2.png" alt="imagem grafico 2" class="grafico">
+                    <img src="imagens/grafico3.png" alt="imagem grafico 3" id="ziguezague" class="grafico" >
+                    <img src="imagens/grafico4.png" alt="imagem grafico 4" class="grafico">
                 </div>
-
-
-                <h3 class="tela">Funcionalidades do sistema</h3>
-            
-        </div>
-
-        <div id="roxo">
-            <div class="evenly">
-                <h2 class="funcion1">Visualize seus funcionários</h2>
-                <h2 class="funcion1">Perfis detalhados</h2>
-                <h2 class="funcion1">Emita relatórios</h2>
-            </div>
-            <div class="evenly" class="conteudo">
-                <b>
-                    <p class="funcion2">Acesse a lista completa de funcionários cadastrados</p>
-                </b>
-                <b>
-                    <p class="funcion2">Consulte informações detalhadas sobre cada funcionário, incluindo nome, setor e nota de desempenho.</p>
-                </b>
-                <b>
-                    <p class="funcion2">Gere relatórios personalizados com base em notas de desempenho ou cargos</p>
-                </b>
             </div>
 
-            <div class="evenly">
-                <h2 class="funcion1" id="translateY">Versão Mobile</h2>
-                <h2 class="funcion1" id="widthDiferente">Cadastre novos funcionários</h2>
-            </div>
-            <div class="evenly" class="conteudo">     
-                <b>
-                    <p class="funcion2">Visualize dados de qualquer lugar com nossa interface otimizada para dispositivos móveis.</p>
-                </b>
-                <b>
-                    <p class="funcion2">Adicione novos membros à equipe de forma simples e rápida.</p>
-                </b>
-            </div>
-
-            
-        </div>
+                <div id="funcionalidades">
+                    <h3 class="tela">Funcionalidades do sistema</h3>
+                                
+                           
+                            
+                            <div id="roxo">
+                                <div class="evenly">
+                    <h2 class="funcion1">Visualize seus funcionários</h2>
+                    <h2 class="funcion1">Perfis detalhados</h2>
+                    <h2 class="funcion1">Emita relatórios</h2>
+                                </div>
+                                <div class="evenly" class="conteudo">
+                    <b>
+                        <p class="funcion2">Acesse a lista completa de funcionários cadastrados</p>
+                        <div class="quadrado">.</div>
+                    </b>
+                    <b>
+                        <p class="funcion2">Consulte informações detalhadas sobre cada funcionário, incluindo nome, setor e nota de desempenho.</p>
+                        <div class="quadrado">.</div>
+                    </b>
+                    <b>
+                        <p class="funcion2">Gere relatórios personalizados com base em notas de desempenho ou cargos</p>
+                        <div class="quadrado">.</div>
+                    </b>
+                                </div>
+                    
+                                <div class="evenly">
+                    <h2 class="funcion1" id="translate">Versão Mobile</h2>
+                    <h2 class="funcion1" id="widthDiferente">Cadastre novos funcionários</h2>
+                                </div>
+                                <div class="evenly" class="conteudo">
+                    <b>
+                        <p class="funcion2">Visualize dados de qualquer lugar com nossa interface otimizada para dispositivos móveis.</p>
+                        <div class="quadrado">.</div>
+                    </b>
+                    <b>
+                        <p class="funcion2">Adicione novos membros à equipe de forma simples e rápida.</p>
+                        <div class="quadrado">.</div>
+                    </b>
+                                </div>
+                    
+                                
+                            </div>
+                </div>
 
 
         <div class="margem">
@@ -109,27 +140,41 @@
             <div id="planos">
 
                 <div class="caixa">
-                    <div class="conteudoPlanos">
-                        <h2 class="tituloCaixa">Básico</h2>
-                        <p>Inclui funcionalidades essenciais para gestão de até 50 funcionários. Ideal para pequenas empresas</p>
-                    </div>
-                  <!--<div class="precosPlanos">
-                        <p>R$</p><h2 class="preco">99</h2><p>/mês</p>
-                    </div>-->
+                    <a href="#">
+                        <div class="conteudoPlanos">
+                            <h2 class="tituloCaixa">Básico</h2>
+                            <p>Inclui funcionalidades essenciais para gestão de até 50 funcionários. Ideal para pequenas empresas</p>
+                            <b class="precosPlanos">
+                                <p class="RS">R$</p><h2 class="preco">99</h2><p class="mes">/mês</p>
+                            </b>
+                        </div>
+                    </a>
+
                 </div>
                 
                 <div class="caixa">
-                    <div class="conteudoPlanos">
-                        <h2 class="tituloCaixa">Profissional</h2>
-                        <p>Funcionalidades avançadas para gestão de até 200 funcionários. Perfeito para médias empresas.</p>
-                    </div>
+                    <a href="#">
+                        <div class="conteudoPlanos">
+                            <h2 class="tituloCaixa">Profissional</h2>
+                            <p>Funcionalidades avançadas para gestão de até 200 funcionários. Perfeito para médias empresas.</p>
+                            <b class="precosPlanos">
+                                <p class="RS">R$</p><h2 class="preco">199</h2><p class="mes">/mês</p>
+                            </b>
+                        </div>
+                    </a>
                 </div>
 
 
                 <div class="caixa">
-                    <div class="conteudoPlanos">
-                        <h2 class="tituloCaixa">Empresarial</h2>
-                        <p>Solução completa para grandes empresas, sem limite de funcionários. Inclui suporte prioritário.</p>
+                    <a href="#">
+                        <div class="conteudoPlanos">
+                            <h2 class="tituloCaixa">Empresarial</h2>
+                            <p>Solução completa para grandes empresas, sem limite de funcionários. Inclui suporte prioritário.</p>
+                            <b class="precosPlanos">
+                                <p class="RS">R$</p><h2 class="preco">399</h2><p class="mes">/mês</p>
+                            </b>
+                    </a>
+                        
                     </div>
                    
                 </div>
@@ -148,9 +193,9 @@
                     <p class="nome2">Gestão</p><br>
                     <p class="nome2">Fácil</p>
                 </div>
-            </div>
+            </div><br>
             <div class="configuracaoFooter">
-                <a href="#">Política de Privacidade</a>
+                <a href="#">Política de Privacidade</a><br>
                 <a href="#">Termos de Uso</a>
             </div>
        </div>
@@ -161,7 +206,11 @@
             <img src="imagens/instagram.png" alt="instagram"><br>
             <p> contato@gestaofacil.com</p><br>
             <p>(11) 1234-5678</p><br>
-            <p> <img src="imagens/pino-de-localizacao.png" alt="localização">  Rua Exemplo, 123, Centro, Cidade, Estado</p>
+
+            <div id="localizacao" class="displayFlex">
+                <img src="imagens/pino-de-localizacao.png" alt="localização">
+                <p>Rua Exemplo, 123, Centro, Cidade, Estado</p>
+            </div>
         </div> 
 
    </footer>
