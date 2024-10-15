@@ -11,38 +11,29 @@
 <body>
     <header>
 
-        <div class="degrade">.</div>
+        <div class="degrade" id="home">.</div>
 
-       <nav class="displayFlex">
-                <img src="imagens/logo.png" alt="logo">
-                <div class="logo">
-                    <p >Gestão</p>
-                    <p >Fácil</p>
-                </div>
-                <ul>
-                    <li><a href="#">Quem Somos</a>
-                       <!-- <p>A Gestão Fácil é uma solução
-                            completa para gerenciar seus funcionários de
-                            maneira eficiente e prática. Nossa plataforma
-                            oferece ferramentas intuitivas e poderosas para
-                            otimizar a administração de recursos humanos
-                            em sua empresa.</p> -->
-                    </li>
-                    <li><a href="#">Funcionalidades do Sistema</a>
+       <div class="menu">
+           <nav class="displayFlex" >
+                        <div class="displayFlex">
+                            <img src="imagens/logo.png" alt="logo">
+                            <div class="logo">
+                                <p>Gestão</p>
+                                <p>Fácil</p>
+                            </div>
+                        </div>
                         <ul>
-                            <li><a href="#">Visualizar Funcionários</a></li>
-                            <li><a href="#">Cadastrar Novos Funcionários</a></li>
-                            <li><a href="#">Ver Perfil Detalhado</a></li>
-                            <li><a href="#">Emitir Relatório</a></li>
-                            <li><a href="#">Versão Mobile</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Nossos Planos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-        
-            
-        </nav>
+                            <li><a href="#home">Quem Somos</a></li>
+                            <li><a href="#funcionalidades">Funcionalidades do Sistema</a></li>
+                            <li><a href="#nossosPlanos">Nossos Planos</a> </li>
+                            <li><a href="#contato">Contato</a></li>
+
+                            <input type="button" value="Entrar">
+                    </ul>
+            </nav>
+       </div>
+
+
      </header>
 
    <main>
@@ -57,7 +48,7 @@
                     </div>
             
                 <p>A Gestão Fácil é uma solução completa para gerenciar seus funcionários de maneira eficiente e prática</p>
-                <div>
+                <div id="acesse">
                     <input type="button" value="Acesse já">
                 </div>
                </div>
@@ -92,12 +83,13 @@
                                 
                            
                             
-                            <div id="roxo">
+                 <div id="roxo">
                                 <div class="evenly">
                     <h2 class="funcion1">Visualize seus funcionários</h2>
                     <h2 class="funcion1">Perfis detalhados</h2>
                     <h2 class="funcion1">Emita relatórios</h2>
                                 </div>
+
                                 <div class="evenly" class="conteudo">
                     <b>
                         <p class="funcion2">Acesse a lista completa de funcionários cadastrados</p>
@@ -117,6 +109,7 @@
                     <h2 class="funcion1" id="translate">Versão Mobile</h2>
                     <h2 class="funcion1" id="widthDiferente">Cadastre novos funcionários</h2>
                                 </div>
+
                                 <div class="evenly" class="conteudo">
                     <b>
                         <p class="funcion2">Visualize dados de qualquer lugar com nossa interface otimizada para dispositivos móveis.</p>
@@ -129,39 +122,40 @@
                                 </div>
                     
                                 
-                            </div>
+                 </div>
                 </div>
 
 
         <div class="margem">
-          <h3 class="tela">Nossos Planos</h3>
-
-
+          
+            <section id="nossosPlanos">
+          <h3 class="tela"> Nossos Planos</h3>
+            
             <div id="planos">
-
-                <div class="caixa">
-                    <a href="#">
-                        <div class="conteudoPlanos">
-                            <h2 class="tituloCaixa">Básico</h2>
-                            <p>Inclui funcionalidades essenciais para gestão de até 50 funcionários. Ideal para pequenas empresas</p>
-                            <b class="precosPlanos">
-                                <p class="RS">R$</p><h2 class="preco">99</h2><p class="mes">/mês</p>
-                            </b>
-                        </div>
-                    </a>
-
-                </div>
-                
-                <div class="caixa">
-                    <a href="#">
-                        <div class="conteudoPlanos">
-                            <h2 class="tituloCaixa">Profissional</h2>
-                            <p>Funcionalidades avançadas para gestão de até 200 funcionários. Perfeito para médias empresas.</p>
-                            <b class="precosPlanos">
-                                <p class="RS">R$</p><h2 class="preco">199</h2><p class="mes">/mês</p>
-                            </b>
-                        </div>
-                    </a>
+    
+                    <div class="caixa">
+                        <a href="#">
+                            <div class="conteudoPlanos">
+                                <h2 class="tituloCaixa">Básico</h2>
+                                <p>Inclui funcionalidades essenciais para gestão de até 50 funcionários. Ideal para pequenas empresas</p>
+                                <b class="precosPlanos">
+                                    <p class="RS">R$</p><h2 class="preco">99</h2><p class="mes">/mês</p>
+                                </b>
+                            </div>
+                        </a>
+    
+                    </div>
+    
+                    <div class="caixa">
+                        <a href="#">
+                            <div class="conteudoPlanos">
+                                <h2 class="tituloCaixa">Profissional</h2>
+                                <p>Funcionalidades avançadas para gestão de até 200 funcionários. Perfeito para médias empresas.</p>
+                                <b class="precosPlanos">
+                                    <p class="RS">R$</p><h2 class="preco">199</h2><p class="mes">/mês</p>
+                                </b>
+                            </div>
+                        </a>
                 </div>
 
 
@@ -173,15 +167,16 @@
                             <b class="precosPlanos">
                                 <p class="RS">R$</p><h2 class="preco">399</h2><p class="mes">/mês</p>
                             </b>
+                        </div>
                     </a>
                         
                     </div>
                    
                 </div>
                 
-            </div>
+            </section>
                 </main>
-        </div>
+        
     <footer> 
 
     
@@ -201,17 +196,18 @@
        </div>
 
 
-        <div id="esquerda" class="configuracaoFooter">
-            <img src="imagens/facebook.png" alt="facebook">
-            <img src="imagens/instagram.png" alt="instagram"><br>
-            <p> contato@gestaofacil.com</p><br>
-            <p>(11) 1234-5678</p><br>
-
-            <div id="localizacao" class="displayFlex">
-                <img src="imagens/pino-de-localizacao.png" alt="localização">
-                <p>Rua Exemplo, 123, Centro, Cidade, Estado</p>
+        <section id="contato">
+            <div id="esquerda" class="configuracaoFooter">
+                <img src="imagens/facebook.png" alt="facebook">
+                <img src="imagens/instagram.png" alt="instagram"><br>
+                <p> contato@gestaofacil.com</p><br>
+                <p>(11) 1234-5678</p><br>
+                <div id="localizacao" class="displayFlex">
+                    <img src="imagens/pino-de-localizacao.png" alt="localização">
+                    <p>Rua Exemplo, 123, Centro, Cidade, Estado</p>
+                </div>
             </div>
-        </div> 
+        </section>
 
    </footer>
    <div class="degrade">.</div> 

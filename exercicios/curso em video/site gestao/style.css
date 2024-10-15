@@ -19,6 +19,8 @@
     --corSegundaria: #211545;
     --corRosa: #DB1137;
     --corRoxo: #791EEB;
+    --corHover: rgba(143, 140, 140, 0.11);
+    --corBasica: white; 
 }
 
 ::-webkit-scrollbar{
@@ -49,10 +51,13 @@
     font-weight: 400;
     font-style: normal;
     }
-    
+
+/*Cabeçalho*/
 .degrade{
+    position: relative;
     background-image: linear-gradient(to right,#CC1901, #DB1137,#EB096E, #9D17C4, #791EEB );
     color: #CC1901;
+    z-index: 2;
     
 }
 
@@ -73,23 +78,18 @@ header > .degrade{
 
 /*Menu*/
 
-nav ul{
-    list-style-type: none;
-    position: relative;
+.menu{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: var(--corBasica);
+    padding-top: 30px;
+    padding-bottom: 15px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.082) ;
+    
+    
 
-}
-
-nav ul li{
-    display: inline-block;
-}
-
-nav ul li a{
-   text-decoration: none;
-}
-
-nav ul ul{
-    display: none;
-    position: absolute;
 }
 
 nav > img{
@@ -104,11 +104,89 @@ nav > img{
     font-family: var(--fontePrincipal);
     color: var(--corPrincipal);
     padding-left: 10px;
+    
 }
 
-nav > .logo{
+nav div .logo{
     font-size: 28px;
 }
+
+nav{
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+  
+}
+
+nav ul{
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    gap: 20px;
+
+}
+
+nav ul li{
+    font-family: var(--fonteRegular);
+    transform: translateY(32%);
+    font-size: 20px;
+}
+
+nav ul li a{
+   text-decoration: none;
+}
+
+nav ul a:hover{
+    background-color: var(--corHover) ;
+    padding: 10px;
+    border-radius: 5px;
+ }
+
+nav ul ul{
+    display: none;
+    position: absolute;
+}
+
+nav ul ul li {
+    color: rgb(73, 73, 73);
+}
+
+nav ul ul li a{
+    color: rgb(73, 73, 73);
+}
+
+nav ul li:hover ul{
+    display: block;
+    background-color: var(--corBasica);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(138, 138, 138, 0.432);
+
+}
+
+nav ul li:hover ul{
+    display: block;
+    background-color: var(--corSubmenu);
+
+}
+
+nav input{
+    width: 104px;
+    height: 48px;
+    padding: 5px;
+    font-family: var(--fonteTitulo);
+    border: 5px solid var(--corPrincipal);
+    border-radius: 14px;
+    font-size: 22px;
+    color: var(--corPrincipal);
+    background-color: white;
+    font-weight: bold ;
+    cursor: pointer;
+    transform: translateY(26%);
+
+}
+
+
+
 
 h3.tela{
     font-family: var(--fonteRegular);
@@ -122,12 +200,13 @@ h3.tela{
 main  h1{
     font-family: var(--fonteTitulo);
     color: var(--corSegundaria);
-    font-size: 85px;
+    font-size: 80px;
+    
     
 }
 
 #h1{
-    margin-top: 200px;
+    margin-top: 270px;
 }
 
 .laranja{
@@ -142,13 +221,13 @@ main  h1{
 main p{
     color: var(--corSegundaria);
     font-family: var(--fonteRegular);
-    font-size: 21px;
+    font-size: 20px;
     width: 695px;
     margin-top: 15px;
     
 }
 
-input{
+#acesse input {
     padding: 10px;
     font-family: var(--fonteTitulo);
     border: 5px solid var(--corPrincipal);
@@ -222,7 +301,7 @@ input{
 
 #imagem img{
     width: 102%;
-    transform: translate(22%,-101%);
+    transform: translate(22%,-101%)
 }
 
 /*Plataforma*/
@@ -260,6 +339,7 @@ main .icone2{
 .grafico{
     width: 237px;
     margin-left: 150px;
+    margin-top: 90px;
     
 }
 
@@ -275,7 +355,7 @@ main .icone2{
 }
 
 #funcionalidades{
-    margin-top: 300px;
+    margin-top: 450px;
 }
 
 div#roxo{
@@ -283,7 +363,7 @@ div#roxo{
     background-color: var(--corSegundaria);
     padding: 90px;
     padding-bottom: 130px;
-    margin-bottom: 150px;
+    margin-bottom: 300px;
   
     
 }
@@ -349,15 +429,18 @@ div#roxo{
 }
 
 
-/*Conteudo (planos)*/
+/*Planos*/
 
 #planos{
+    /* border: 2px solid purple;*/
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-evenly;
-   /* border: 2px solid purple;*/
     margin: auto;
+   
+
+   
 
 
 }
@@ -368,6 +451,7 @@ div#roxo{
     width: 339px;
     height: 463px;
     margin-top: 50px;
+    margin-bottom: 200px;
    
 }
 
@@ -386,8 +470,6 @@ div#roxo{
    
 }
 
-/**resolver bug do empresarial*/
-
 .tituloCaixa{
     font-family: var(--fonteTitulo);
     color: var(--corPrincipal);
@@ -401,20 +483,18 @@ div#roxo{
 }
 
 .caixa p{
+    /*border: 2px solid var(--corPrincipal);*/
     align-self: center;
     margin: auto;
     width: 250px; 
     height: 96px;
-    font-size: 16px;
-  /*  border: 2px solid var(--corPrincipal);*/
+    font-size: 16px; 
 }
 
 .conteudoPlanos{
     /*border: 2px solid green;*/
     width: 339px; 
     align-self: top;
-
-
 }
 
 .precosPlanos{
