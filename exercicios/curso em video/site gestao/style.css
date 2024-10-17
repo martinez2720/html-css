@@ -23,11 +23,22 @@
     --corBasica: white; 
 }
 
+
+/*tirar barra de rolagem*/
 ::-webkit-scrollbar{
     width: 0px; 
    height: 0px;
    
    }
+
+
+/*scroll mais suave*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 
 /*Fontes*/
 
@@ -207,6 +218,7 @@ main  h1{
 
 #h1{
     margin-top: 270px;
+    width: 695px;
 }
 
 .laranja{
@@ -222,7 +234,6 @@ main p{
     color: var(--corSegundaria);
     font-family: var(--fonteRegular);
     font-size: 20px;
-    width: 695px;
     margin-top: 15px;
     
 }
@@ -337,7 +348,7 @@ main .icone2{
 /*Gráficos*/
 
 .grafico{
-    width: 237px;
+    width: 13%;
     margin-left: 150px;
     margin-top: 90px;
     
@@ -348,7 +359,8 @@ main .icone2{
 }
 
 
-/*Funcionalidades*/
+/*funcionalidades*/
+
 
 #funcionalidades h3.tela{
     margin-left: 90px;
@@ -367,66 +379,50 @@ div#roxo{
   
     
 }
-
 .evenly{
-    /*border: 2px solid red;*/
     display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     
 }
 
 .funcion1{
-  /* border: 2px solid green;*/
-    color: white;
+    color: var(--corBasica);
     font-family: var(--fonteTitulo);
-    width: 300px;
-    height: 92px;
     font-size: 51px;
-    margin-bottom: 40px;
-    margin-top: 90px;
-
-}
-
-#widthDiferente{
-    width: 350px;
-}
-
-#translate{
-    transform: translate(5%,42%);
-}
-
-.evenly b{
-   /* border: 2px solid yellow;*/
-    display: flex;
-    width: 300px;
-    justify-content:center;
-    
+    padding: 15px;
 }
 
 .funcion2{
-  /*  border: 2px solid black;*/
-    color: white;
-    width: 292px;
+    color: var(--corBasica);
     font-size: 16px;
     font-family: var(--fonteRegular);
     font-weight: normal;
+    text-align: center;
+    padding: 20px;
 }
 
-.conteudo{
-    max-width: 1000px;
+#paddingDiferente{
+    padding-top: 50px;
+}
+
+#paddingDiferente2{
+    padding-top: 5px;
 }
 
 .quadrado{
-    position: absolute;
+    position: relative;
     color: rgba(164, 116, 227, 0.247);
     background-color: rgba(164, 116, 227, 0.247);
     border-radius: 30px;
-    width: 347px;
+    width: 350px;
     height: 276px;
-    transform: translateY(-56%);
+    text-align: center;
+    align-items: center;
+    flex-shrink: 1;
+    margin: 20px;
 }
+
 
 
 /*Planos*/
@@ -579,5 +575,30 @@ footer img{
     transform: translateY(13%);
     
 }
+
+/*hamburguer*/
+
+.burguer{ 
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    font-size: 35px;
+    right: 0;
+    margin-right: 60px;
+    transform: translateY(30%);
+    color: var(--corPrincipal);
+}
+
+.close{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    font-size: 35px;
+    right: 0;
+    margin-right: 60px;
+    transform: translateY(30%);
+    color: var(--corPrincipal); 
+}
+
 
 
